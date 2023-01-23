@@ -5,27 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--<link ref="stylesheet" href="./allcoursescss.css">-->
     <style>
-        div { text-align: center; }
-ul { display: inline-block; text-align: left; }
+.animate-charcter
+{
+    
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: rgb(155, 232, 219);
+  background-clip: text;
+  text-decoration-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+      margin-left: 10%;
+}
 
-nav{
-    color:blueviolet;
-    text-decoration: dotted;
-    text-shadow: 20%;
+/*p .class
+        {
+        width:100px;
+        height:120px;
+        background-color:rgb(170, 240, 205);
+        box-shadow: 10px 10px 5px #888888;
+        border-radius: 10px;
+        }
+*/
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
     </style>
+    
+
+    
 </head>
 <body>
-    <div>
-    <nav>
-        <ul>
-        <li>html</li>
-        <li>css</li>
-        <li>javascript</li>
-        <li>nodejs</li>
-        </ul>
-    </nav>
-    </div>
+    
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p class="class">
+                <p class="animate-charcter"> HTML<br>
+                CSS<br>
+                JAVASCRIPT<br>
+                NODE JS<br>
+                </p>
+                </p>
+              </div>
+            </div>
+          </div>
+    
 </body>
 </html>
+
